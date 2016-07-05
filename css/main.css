@@ -33,6 +33,9 @@ section {
   box-sizing: border-box; 
 }
 
+.hidden {
+  display: none;
+}
 
 body {
   width: 100%;
@@ -1916,8 +1919,10 @@ aside.questions {
   line-height: 1.4;
 }
 .questions .order_a_call {
+  display: block;
   width: 270px;
   height: 44px;
+  line-height: 44px;
   background-color: #FEC311;
   color: #000;
   text-transform: uppercase;
@@ -2266,4 +2271,93 @@ section.deals {
   vertical-align: top;
   font-family: "RobotoRegular";
 }
- 
+.pop_form h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "RobotoCondensedBold";
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.pop_form_name ,
+.pop_form_phone {
+  display: block;
+  width: 285px;
+  border: 1px solid #D2D2D2;
+  border-radius: 3px;
+  height: 32px;
+  padding-left: 10px;
+  outline: 0;
+  font-size: 14px;
+  padding-right: 35px;
+  color: #000;
+  font-family: Arial,sans-serif;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pop_form span {
+  display: block;
+  font-size: 14px;
+  margin-left: 10px;
+   font-family: "RobotoRegular";
+   margin-top: 25px;
+   margin-bottom: 7px;
+}
+.pop_form .submit {
+  display: block;
+    width: 285px;
+    height: 44px;
+    background-color: #FEC311;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+.pop_form .submit:hover {
+    background-color: #ffcf3f;
+  }
+
+.pop_form_select {
+  display: inline-block;
+  padding: 0;
+  margin-left: 10px;
+  border: 1px solid #D4D4D4;
+  width: 80px;
+  height: 33px;
+  border-radius: 3px;
+  overflow: hidden;
+  
+  background: #fff url("../img/arrowdown.gif") no-repeat 87% 42%;
+  -webkit-background-size: 15%;
+  background-size: 15%;
+  vertical-align: middle;
+}
+
+.pop_form_select select {
+  padding: 7px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;  
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+}
+
+.pop_form_select select:focus {
+    outline: none;
+}

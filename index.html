@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	
 </head>
 <body>
@@ -35,7 +36,7 @@
 					<div class="call_us">
 						<a href="tel:+74956484583" class="mobile_tel">+7 (495) 648-45-83,</a>
 						<a href="tel:+79255077144" class="mobile_tel">+7 (925) 507-71-44</a>
-						<a href="" class="order_call">Заказать обратный звонок</a>
+						<a href="#callback" class="order_call fancybox">Заказать обратный звонок</a>
 					</div>
 					<a class="basket_but">
 						<span class="lines">
@@ -253,6 +254,45 @@
 						</div>
 					</footer>
 				</div>
+				<div class="hidden">
+					<form id="callback" class="pop_form">
+						<h3>Обратный звонок</h3>
+						<input type="text" name="name" id="pop_form_name" class="pop_form_name" placeholder="Ваше имя" required />
+						<input type="tel" name="phone" id="pop_form_phone" class="pop_form_phone" placeholder="Ваше телефон" required />
+						<span>Удобное для вас время</span>
+						<div class="pop_form_select">
+							<select>
+								<option value="1">8:00</option>
+								<option value="2">9:00</option>
+								<option value="3">10:00</option>
+								<option value="4">11:00</option>
+								<option value="4">12:00</option>
+								<option value="4">13:00</option>
+								<option value="4">14:00</option>
+								<option value="4">15:00</option>
+								<option value="4">16:00</option>
+								<option value="4">17:00</option>
+								<option value="4">18:00</option>
+							</select>
+						</div>
+						<div class="pop_form_select">
+							<select>
+								<option value="1">8:00</option>
+								<option value="2">9:00</option>
+								<option value="3">10:00</option>
+								<option value="4">11:00</option>
+								<option value="4">12:00</option>
+								<option value="4">13:00</option>
+								<option value="4">14:00</option>
+								<option value="4">15:00</option>
+								<option value="4">16:00</option>
+								<option value="4">17:00</option>
+								<option value="4">18:00</option>
+							</select>
+						</div>
+						<input type="submit" class="submit" value="Перезвоните мне" />
+					</form>
+				</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -262,7 +302,7 @@
 	<script src="libs/jquery/jquery-1.12.3.min.js"></script>
 	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
 	<script src="js/common.js"></script>
-
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 
 	<script type="text/javascript"> 	
 		$(document).ready(function(){
