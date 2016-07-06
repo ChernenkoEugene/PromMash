@@ -146,7 +146,7 @@
 						<input type="text" class="s_name" name="s_name" placeholder="Фамилия" required>
 						<input type="text" class="company_name" name="company_name" placeholder="Компания" required>
 						<input type="email" class="contact_email" name="contact_email" placeholder="E-mail" required>
-						<input type="tel" class="contact_tel"  name="contact_tel" placeholder="Контактный телефон"  required>
+						<input type="tel" class="contact_tel"  name="contact_tel" id="contact_tel" placeholder="Контактный телефон"  required>
 						<textarea  name="contact_message" class="contact_message" placeholder="Комментарий к заказу" ></textarea>
 						</div>
 						<input type="submit" class="contact_submit" value="Оформить заказ">
@@ -229,5 +229,14 @@
 	<script src="libs/jquery/jquery-1.12.3.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/maskedinput.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			jQuery(function($){
+				$("#pop_form_phone").mask("+2(222) 222-2222",{autoclear: false});
+				$("#contact_tel").mask("+2(222) 222-2222",{autoclear: false});
+			});
+		});
+	</script>
 </body>
 </html>

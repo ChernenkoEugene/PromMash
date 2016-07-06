@@ -141,6 +141,7 @@ a {
 }
 .top_header .main_logo b {
   background-color: #FEC311;
+  padding: 0 5px;
 }
 .top_header  .main_logo .slogan {
   display: block;
@@ -190,7 +191,19 @@ a {
   display: inline-block;
   vertical-align: top;
   padding-top: 16px;
-  margin-left: 55px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.call_us:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 16px;
+  left: -47px;
+  background: url(../img/phone.jpg) no-repeat;
 }
 
 .call_us .mobile_tel {
@@ -213,6 +226,9 @@ a {
   height: 63px;
   margin-left: 15px;
   position: relative; 
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
+-moz-box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
+box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
 }
 .basket_but span {
   font-size: 14px;
@@ -220,26 +236,15 @@ a {
 }
 .basket_but .lines {
   display: inline-block;
-  width: 63px;
+  width: 32px;
+  height: 28px;
   text-align: center;
-  height: 100%;
-  padding-top: 24px;
+  background: url(../img/bask.jpg) no-repeat;
+  margin-top: 13px;
+  margin-right: 15px;
+  margin-left: 17px;
  }
- .basket_but .lines .line {
-  display: inline-block;
-  width: 17px;
-  height: 1px;
-  background-color: #000;
- }
- .basket_but .lines .line:after {
-  content:"";
-  display: block;
-  margin-top: 5px;
-  margin-left: 2px;
-  width: 14px;
-  height: 1px;
-  background-color: #000;
- }
+
 .basket_text {
   display: inline-block;
   padding-top: 12px;
@@ -321,8 +326,9 @@ a {
   width: 250px;
 }
 .main_content .main_equip li span {
-  display: block;
-  margin-top: 25px;
+    display: block;
+    margin: 25px auto;
+    width: 230px;
 }
 section.slider {
   background-color: #FEC311;
@@ -685,7 +691,6 @@ section.how_it_works {
 /*======= breadcrumbs=======*/
 
 .breadcrumbs { 
- width: 1200px;
  padding-right: 10px;
  margin: 0 auto;
  height: 44px;
@@ -1021,6 +1026,17 @@ section.catalog_3_content {
 
 .select-style select:focus {
     outline: none;
+}
+.catalog_3 .spin,
+.catalog_open_block .spin {
+  margin-left: 17px;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.catalog_open_text .spin {
+  margin-top: 29px;
+  margin-left: 8px;
+  margin-right: 21px;
 }
 .buy_button {
   display: inline-block;
@@ -1517,6 +1533,7 @@ section.contacts {
   background-color: #F7F7F7;
   padding: 25px 20px;
   margin-bottom: 50px;
+  width: 670px;
 }
 .feedback_form input {
   display: inline-block;
@@ -1530,12 +1547,12 @@ section.contacts {
   margin-bottom: 15px;
   color: #000;
   font-family: Arial;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .feedback_form textarea {
   display: block;
-  width: 100%;
+  width: 623px;
   height: 110px;
   padding: 10px;
   padding-top: 6px;
@@ -1577,10 +1594,14 @@ aside.scheme {
   text-align: center;
   padding-left: 50px;
 }
-.scheme h2{
+.scheme h2 {
   font-size: 14px;
   margin-bottom: 15px;
   padding-left: 35  px;
+}
+.scheme img {
+  width: 100%;
+  height: auto;
 }
 .scheme .download {
   width: 230px;
@@ -1598,7 +1619,7 @@ aside.scheme {
   font-family: "RobotoCondensedBold";
   text-align: center;
   padding: 0;
-  margin-left: 45px;
+ 
 }
 .scheme .download:hover {
     background-color: #ffcf3f;

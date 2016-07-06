@@ -116,7 +116,7 @@
 						<form action="" class="send_msg">
 							<input type="text" class="send_msg_name" name="send_msg_name" placeholder="Имя" required>
 							<input type="email" class="send_msg_email" name="send_msg_email" placeholder="E-mail" required>
-							<input type="tel" class="send_msg_tel"  name="send_msg_tel" placeholder="Телефон"  required>
+							<input type="tel" class="send_msg_tel"  name="send_msg_tel" id="send_msg_tel" placeholder="Телефон"  required>
 							<textarea  name="send_msg_message" class="send_msg_message" placeholder="Сообщение" ></textarea>
 							<input type="submit" class="send_msg_submit" value="Отправить">
 						</form>
@@ -199,5 +199,14 @@
 	<script src="libs/jquery/jquery-1.12.3.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/maskedinput.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+	jQuery(function($){
+		$("#pop_form_phone").mask("+2(222) 222-2222",{autoclear: false});
+		$("#send_msg_tel").mask("+2(222) 222-2222",{autoclear: false});
+	});
+});
+</script>
 </body>
 </html>
