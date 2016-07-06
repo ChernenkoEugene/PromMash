@@ -273,13 +273,19 @@ box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
 }
 .header_nav ul li {
   display: inline-block;
-  margin-right: 28px;
+  margin-right: 13px;
   font-size: 13px;
 }
 .header_nav ul li a {
   color: #000;
+  transition: all 0.3s;
+  padding: 5px;
+  padding-bottom: 15px;
 }
-
+.header_nav ul li a:hover {
+  background-color: #fec311;
+  transition: all 0.3s;
+}
 
 /*====================================main_content========================================*/
 
@@ -298,8 +304,8 @@ box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 19px;
+  top: -6px;
+  left: 23px;
   width: 72px;
   height: 5px;
   background-color: #FEC311;
@@ -329,6 +335,10 @@ box-shadow: 0px 1px 0px 0px rgba(254,195,17,1);
     display: block;
     margin: 25px auto;
     width: 230px;
+    color: #000;
+}
+.main_content .main_equip li span:hover {
+   text-decoration: underline;
 }
 section.slider {
   background-color: #FEC311;
@@ -534,11 +544,11 @@ section.why_us {
 }
 .footer_nav ul li {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 10px;
   font-size: 13px;
   position: relative;
 }
-.footer_nav ul li:after {
+/*.footer_nav ul li:after {
   display: block;
   content:"|";
   position: absolute;
@@ -546,18 +556,38 @@ section.why_us {
   right: -15px;
   color: #CACACA;
   font-size: 14px;
-}
+}*/
 .footer_nav ul li:last-child:after {
   display: none;
 }
 .footer_nav ul li a {
   color: #000;
+  padding: 5px;
+  transition: all 0.3s;
 }
-
+.footer_nav ul li a:hover {
+  background-color: #fec311;
+  transition: all 0.3s;
+}
 .copyright {
   margin-top: 23px;
   color: #808080;
   font-size: 13px;
+  position: relative;
+}
+.copyright span {
+  display: inline-block;
+  position: relative;
+  margin-right: 55px;
+}
+.copyright a {
+  position: absolute;
+  top: -7px;
+  right: -31px;
+  display: block;
+  width: 23px;
+  height: 28px;
+  background: url(../img/redbee.png) no-repeat;
 }
 .footer_right_part {
   float: right;
@@ -598,8 +628,8 @@ section.history {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 19px;
+  top: -6px;
+  left: 24px;
   width: 72px;
   height: 5px;
   background-color: #FEC311;
@@ -729,7 +759,7 @@ section.how_it_works {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
+  top: -6px;
   left: 120px;
   width: 51px;
   height: 5px;
@@ -971,18 +1001,19 @@ section.catalog_3_content {
 .catalog_open_block_item li a {
   display: block;
   height: 100%;
-  margin-bottom: 7px;
- }
+}
 
 .catalog_3_block_item li a img,
 .catalog_open_block_item li a img {
   width: 100%;
   height: auto;
+  margin-bottom: 7px;
 }
 .catalog_3_block_item li span,
 .catalog_open_block_item li span {
   font-weight: bold;
   font-size: 15px;
+  color: #000;
 }
 .buy_block {
   margin-top: 3px;
@@ -1488,8 +1519,8 @@ section.contacts {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 516px;
+  top: -6px;
+  left: 496px;
   width: 57px;
   height: 5px;
   background-color: #FEC311;
@@ -1640,8 +1671,8 @@ section.delivery {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 516px;
+  top: -6px;
+  left: 197px;
   width: 57px;
   height: 5px;
   background-color: #FEC311;
@@ -2051,8 +2082,8 @@ section.news {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 434px;
+  top: -6px;
+  left: 418px;
   width: 52px;
   height: 5px;
   background-color: #FEC311;
@@ -2248,8 +2279,8 @@ section.deals {
   content: "";
   display: block;
   position: absolute;
-  top: -5px;
-  left: 291px;
+  top: -6px;
+  left: 281px;
   width: 112px;
   height: 5px;
   background-color: #FEC311;
